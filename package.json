@@ -1,0 +1,45 @@
+{
+	"name": "mean-first-project",
+	"version": "0.0.1",
+	"description": "Basic MEAN (MongoDB, Express, Angular, Node) JavaScript Webapp with Gulp automated tasks",
+	"bugs": {
+		"url": "https://github.com/alvarogonzalezalvarez/mean-first-project",
+		"email": "alvaro.ga00@gmail.com"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Álvaro González Álvarez",
+		"email": "alvaro.ga00@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alvarogonzalezalvarez/mean-first-project"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"body-parser": "^1.9.1",
+		"connect-history-api-fallback": "0.0.5",
+		"cookie-parser": "^1.3.3",
+		"debug": "^2.1.0",
+		"ejs": "^1.0.0",
+		"express": "^4.10.0",
+		"gulp": "^3.8.9",
+		"gulp-angular-filesort": "^1.0.4",
+		"gulp-angular-templatecache": "^1.4.2",
+		"gulp-connect": "^2.0.6",
+		"gulp-if": "^1.2.5",
+		"gulp-inject": "^1.0.2",
+		"gulp-jshint": "^1.8.5",
+		"gulp-minify-css": "^0.3.11",
+		"gulp-stylus": "^1.3.3",
+		"gulp-uglify": "^1.0.1",
+		"gulp-uncss": "^0.5.1",
+		"gulp-useref": "^1.0.2",
+		"jshint-stylish": "^1.0.0",
+		"mongoose": "^3.8.18",
+		"morgan": "^1.4.1",
+		"nib": "^1.0.4",
+		"serve-favicon": "^2.1.6",
+		"wiredep": "^1.8.6"
+	}
+}
