@@ -11,14 +11,12 @@ Basic MEAN (MongoDB, Express, Angular, Node) JavaScript Webapp with Gulp automat
 ```
 $ npm install -g gulp
 $ npm install -g bower
-$ npm install -g mongoose
+$ npm install -g stylus
 $ npm install -g express-generator
 ```
 ### Project Dependencies
 ```
 $ npm install --save-dev gulp
-$ npm install --save-dev gulp-connect
-$ npm install --save-dev connect-history-api-fallback
 $ npm install --save-dev gulp-jshint
 $ npm install --save-dev gulp-useref
 $ npm install --save-dev gulp-if
@@ -32,14 +30,14 @@ $ npm install --save-dev wiredep
 $ npm install --save-dev gulp-angular-templatecache
 $ npm install --save-dev gulp-uncss
 $ npm install --save-dev gulp-angular-filesort
-$ npm install --save-dev mongoose
-$ npm install --save-dev express
-$ npm install --save-dev body-parser
-$ npm install --save-dev cookie-parser
-$ npm install --save-dev morgan
-$ npm install --save-dev serve-favicon
-$ npm install --save-dev debug
-$ npm install --save-dev ejs
+$ npm install --save express
+$ npm install --save body-parser
+$ npm install --save cookie-parser
+$ npm install --save morgan
+$ npm install --save serve-favicon
+$ npm install --save debug
+$ npm install --save ejs
+$ npm install --save mongoose
 ```
 ### Used Libraries
 **Already included inside the 'lib' directory**

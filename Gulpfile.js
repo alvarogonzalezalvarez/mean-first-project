@@ -2,7 +2,6 @@
 'use strict';
 
 var gulp = require('gulp'),
-	connect = require('gulp-connect'),
 	stylus = require('gulp-stylus'),
 	nib = require('nib'),
 	jshint = require('gulp-jshint'),
@@ -15,8 +14,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	uncss = require('gulp-uncss'),
 	angularFilesort = require('gulp-angular-filesort'),
-	templateCache = require('gulp-angular-templatecache'),
-	historyApiFallback = require('connect-history-api-fallback');
+	templateCache = require('gulp-angular-templatecache');
 
 // Servidor web de desarrollo
 gulp.task('server', function() {
@@ -51,14 +49,7 @@ gulp.task('jshint', function() {
 gulp.task('css', function() {
 	gulp.src('./app/stylesheets/main.styl')
 		.pipe(stylus({ use: nib() }))
-		.pipe(gulp.dest('./app/stylesheets'))
-		.pipe(connect.reload());
-});
-
-// Recarga el navegador cuando hay cambios en el HTML
-gulp.task('html', function() {
-	gulp.src('./app/**/*.html')
-		.pipe(connect.reload());
+		.pipe(gulp.dest('./app/stylesheets'));
 });
 
 // Busca en las carpetas de estilos y javascript los archivos que hayamos creado
@@ -123,7 +114,6 @@ gulp.task('uncss', function() {
 // Vigila cambios que se produzcan en el código
 // y lanza las tareas relacionadas
 gulp.task('watch', function() {
-	gulp.watch(['./app/**/*.html'], ['html']);
 	gulp.watch(['./app/**/*.tpl.html'], ['templates']);
 	gulp.watch(['./app/stylesheets/**/*.styl'], ['css', 'inject']);
 	gulp.watch(['./app/scripts/**/*.js', './Gulpfile.js'], ['jshint', 'inject']);
